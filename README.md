@@ -1,4 +1,4 @@
-<!-- ![AirBeats Screenshot](https://your.screenshot.link/here)   -->
+![AirBeats](https://github.com/user-attachments/assets/016e0552-d62a-4be9-93f5-875f7c8fae66)
 *Chords light up when your fingers play!*
 
 # 🎵 AirBeats – Wave Your Hands, Make Some Noise!
