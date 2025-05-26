@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture MIDI Controller</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <div class="author">
+         <p>Made with ❤️ by Lagnajit</p>
+    </div>
+
+    <div class="performance-info">
+        <span id="fpsDisplay">FPS: --</span>
+        <span id="activeNotesDisplay">Active Notes: 0</span>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>AirBeats</h1>
+            <p>Control music with your hand gestures</p>
+        </div>
+
+        
+
+        <div class="controls">
+            <button id="startBtn" class="start-btn">🎬 Start Camera</button>
+            <button id="stopBtn" class="stop-btn" disabled>⏹️ Stop</button>
+            <select id="instrumentSelect">
+                <option value="0">🎹 Piano</option>
+                <option value="1">🎸 Guitar</option>
+                <option value="2">🎻 Violin</option>
+                <option value="3">🎺 Brass</option>
+                <option value="4">🪈 Flute</option>
+            </select>
+            <div class="loading-spinner" id="loadingSpinner"></div>
+        </div>
+
+        <div id="statusDisplay" class="status info">Ready to start</div>
+
+        <div class="chord-display">
+            <div class="hand-section left">
+                <h3 class="hand-title">🤚 Left Hand</h3>
+                <div id="left-thumb" class="finger-chord">
+                    <span>👍 Thumb</span>
+                    <span>D-F#-A</span>
+                </div>
+                <div id="left-index" class="finger-chord">
+                    <span>👆 Index</span>
+                    <span>E-G-B</span>
+                </div>
+                <div id="left-middle" class="finger-chord">
+                    <span>🖕 Middle</span>
+                    <span>F#-A-C#</span>
+                </div>
+                <div id="left-ring" class="finger-chord">
+                    <span>💍 Ring</span>
+                    <span>G-B-D</span>
+                </div>
+                <div id="left-pinky" class="finger-chord">
+                    <span>🤙 Pinky</span>
+                    <span>A-C#-E</span>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <video id="videoElement" width="640" height="480" autoplay playsinline></video>
+                <canvas id="output_canvas" width="640" height="480"></canvas>
+            </div>
+
+            <div class="hand-section right">
+                <h3 class="hand-title">✋ Right Hand</h3>
+                <div id="right-thumb" class="finger-chord">
+                    <span>👍 Thumb</span>
+                    <span>D-F#-A</span>
+                </div>
+                <div id="right-index" class="finger-chord">
+                    <span>👆 Index</span>
+                    <span>E-G-B</span>
+                </div>
+                <div id="right-middle" class="finger-chord">
+                    <span>🖕 Middle</span>
+                    <span>F#-A-C#</span>
+                </div>
+                <div id="right-ring" class="finger-chord">
+                    <span>💍 Ring</span>
+                    <span>G-B-D</span>
+                </div>
+                <div id="right-pinky" class="finger-chord">
+                    <span>🤙 Pinky</span>
+                    <span>A-C#-E</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
