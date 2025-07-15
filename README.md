@@ -7,7 +7,7 @@ Welcome to **AirBeats** – the magical, musical playground where your fingers b
 
 ## 🚀 What is this?
 
-**AirBeats** is a gesture-powered MIDI controller built for fun, learning, and performance. It uses your webcam + hand movements to play chords using virtual instruments. Piano, Guitar, Violin – you name it – all at your fingertips (literally).
+**AirBeats** is a gesture-powered MIDI controller built for fun, learning, and performance. It uses your webcam + hand movements to play chords using virtual instruments. Piano, Guitar, Violin – all at your fingertips (literally).
 
 ## ✨ Features
 
