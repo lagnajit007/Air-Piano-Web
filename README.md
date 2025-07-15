@@ -3,7 +3,7 @@
 
 # 🎵 AirBeats – Wave Your Hands, Make Some Noise!
 
-Welcome to **AirBeats** – the magical, musical playground where your fingers become instruments and your webcam is your wand. No wires, no strings attached – just *you* and your groove! 🕺💃
+Welcome to **AirBeats** – the magical, musical playground where your fingers become instruments and your webcam is your wand. No wires, no strings attached – just *you* and your groove!
 
 ## 🚀 What is this?
 
